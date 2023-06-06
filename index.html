@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="mainBgContainer">
+
+    <div class="card">
+      <img src="images/bg-main-desktop.png" alt="Purple background">
+
+      <img class="cardFront"src="/images/bg-card-front.png" alt="bg card front" width="400" height="200">
+     </div>
+    
+
+
+    <div class="contentContainer">
+      <div class="imageContainer"></div>
+      <div class="formContainer">
+        <form action="">
+            <label for="cardHolderName">
+              <h4>Cardholder Name</h4>
+              <input type="textbox" name="cardHolderName" id="cardHolderName" placeholder="e.g. Jane Appleseed">
+            </label>
+            <label for="cardHolderNumber">
+              <h4>Card Number</h4>
+              <input type="number" name="cardHolderNumber" id="cardHolderNumber" placeholder="e.g. 1234 5678 9123 0000">
+            </label>
+              <div class="cardExpChecking">
+                <label for="cardHolderNumber">
+                  <h4>Exp Date (MM/YY)</h4>
+                  <input type="number" name="cardMonth" min="01" max="12" id="cardMonth">
+                  <input type="number" name="cardYear" min="00" max="99" id="cardYear">
+                </label>
+                <label for="cardHolderNumber">
+                  <h4>CVC</h4>
+                  <input type="number" name="cardHolderNumber" id="cardHolderNumberCVC" min="000" max="999">
+                </label>
+              </div>
+            <button class="confirmBtn">Confirm</button>
+          </form>
+
+      </div>
+
+    </div>
+
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
